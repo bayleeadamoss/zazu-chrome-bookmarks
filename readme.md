@@ -13,7 +13,7 @@ Add the package to your plugins array in `./zazurc.js`.
 By default we look for your default profile located at:
 
 ~~~
-/Users/bschmeisser/Library/Application Support/Google/Chrome/Default/Bookmarks
+~/Library/Application Support/Google/Chrome/Default/Bookmarks
 ~~~
 
 To overwrite it, set the `file` variable:
