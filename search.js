@@ -26,10 +26,12 @@ module.exports = (pluginContext) => {
             bookmarks.push(bookmark)
           }
         })
+
         // Filter
-        // toLowerCase() is required - https://github.com/amjith/fuzzyfind/pull/3
-        const filteredBookmarks = fuzzyfind(query.toLowerCase(), bookmarks, (bookmark) => {
-          return (bookmark.title + bookmark.subtitle).toLowerCase()
+        const accessor = (bookmark) => bookmark.title + bookmark.subtitle
+        const filteredBookmarks = fuzzyfind(query, bookmarks, {
+          accessor,
+          precision: 0.5,
         })
         resolve(filteredBookmarks)
       })

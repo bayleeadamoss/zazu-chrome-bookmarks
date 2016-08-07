@@ -11,7 +11,7 @@
   "author": "Blaine Schmeisser",
   "license": "MIT",
   "dependencies": {
-    "fuzzyfind": "^1.2.0",
+    "fuzzyfind": "^2.0.0",
     "traverse": "^0.6.6"
   }
 }
