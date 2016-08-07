@@ -19,6 +19,7 @@ module.exports = (pluginContext) => {
           const isBookmark = item['type'] === 'url'
           if (isBookmark) {
             const bookmark = {
+              id: query + item['url'],
               title: item['name'],
               subtitle: item['url'],
               value: item['url'],
