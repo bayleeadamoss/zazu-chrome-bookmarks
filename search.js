@@ -33,7 +33,7 @@ module.exports = (pluginContext) => {
         const filteredBookmarks = fuzzyfind(query, bookmarks, {
           accessor,
           precision: 0.5,
-        })
+        }).slice(0, 6)
         resolve(filteredBookmarks)
       })
     })
