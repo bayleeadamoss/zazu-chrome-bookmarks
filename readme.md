@@ -5,11 +5,13 @@ Chrome bookmark searcher for Zazu.
 ## Usage
 
 This plugin requires a `,b` prefix, then any search term. For instance to search
-your bookmarks for `emoji` use the following:
+your bookmarks for `github` use the following:
 
 ~~~
-,b emoji
+,b github
 ~~~
+
+![screenshot](./assets/screenshot.png)
 
 ## Installing
 
