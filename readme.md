@@ -2,6 +2,15 @@
 
 Chrome bookmark searcher for Zazu.
 
+## Usage
+
+This plugin requires a `,b` prefix, then any search term. For instance to search
+your bookmarks for `emoji` use the following:
+
+~~~
+,b emoji
+~~~
+
 ## Installing
 
 Add the package to your plugins array in `./zazurc.js`.
