@@ -1,0 +1,28 @@
+{
+  "name": "Chrome Bookmarks",
+  "version": "1.0.0",
+  "description": "Chrome bookmark searcher for Zazu.",
+  "icon": "assets/chrome.png",
+  "blocks": {
+    "input": [
+      {
+        "id": "search",
+        "type": "PrefixScript",
+        "space": true,
+        "args": "Required",
+        "prefix": ",b",
+        "script": "search.js",
+        "connections": [
+          "Open"
+        ]
+      }
+    ],
+    "output": [
+      {
+        "id": "Open",
+        "type": "OpenInBrowser",
+        "url": "{value}"
+      }
+    ]
+  }
+}

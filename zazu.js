@@ -1,3 +1,4 @@
+// Deprecated use zazu.json instead
 module.exports = {
   name: 'Chrome Bookmarks',
   version: '1.0.0',
