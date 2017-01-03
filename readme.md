@@ -18,7 +18,11 @@ your bookmarks for `github` use the following:
 Add the package to your plugins array in `./zazurc.js`.
 
 ~~~ javascript
-'tinytacoteam/zazu-chrome-bookmarks',
+{
+  "plugins": [
+    "tinytacoteam/zazu-chrome-bookmarks"
+  ]
+}
 ~~~
 
 By default we look for your default profile located at:
@@ -31,9 +35,9 @@ To overwrite it, set the `file` variable:
 
 ~~~ javascript
 {
-  name: 'tinytacoteam/zazu-chrome-bookmarks',
-  variables: {
-    file: '~/Library/Application Support/Google/Chrome/Profile 1/Bookmarks',
-  },
+  "name": "tinytacoteam/zazu-chrome-bookmarks",
+  "variables": {
+    "file": "~/Library/Application Support/Google/Chrome/Profile 1/Bookmarks"
+  }
 }
 ~~~
