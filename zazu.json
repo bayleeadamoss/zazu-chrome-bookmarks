@@ -6,7 +6,7 @@
   "blocks": {
     "input": [
       {
-        "id": "search",
+        "id": "Chrome Bookmarks",
         "type": "PrefixScript",
         "space": true,
         "args": "Required",
