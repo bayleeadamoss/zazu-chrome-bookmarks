@@ -8,6 +8,7 @@ const file = '~/Library/Application Support/Google/Chrome/Default/Bookmarks'
 
 module.exports = (pluginContext) => {
   return (query, env) => {
+    if (query.length === 0) return Promise.resolve([])
     const variables = env || {}
     const bookmarkFile = (variables['file'] || file).replace(/^~/, os.homedir())
     return new Promise((resolve, reject) => {
