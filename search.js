@@ -4,7 +4,13 @@ const os = require('os')
 const traverse = require('traverse')
 const fuzzyfind = require('fuzzyfind')
 
-const file = '~/Library/Application Support/Google/Chrome/Default/Bookmarks'
+let file = ''
+
+if (os.platform() === 'darwin') {
+  file = '~/Library/Application Support/Google/Chrome/Default/Bookmarks'
+} else if (os.platform() === 'linux') {
+  file = '~/.config/google-chrome/Default/Bookmarks'
+}
 
 module.exports = (pluginContext) => {
   return (query, env) => {
