@@ -10,6 +10,8 @@ if (os.platform() === 'darwin') {
   file = '~/Library/Application Support/Google/Chrome/Default/Bookmarks'
 } else if (os.platform() === 'linux') {
   file = '~/.config/google-chrome/Default/Bookmarks'
+} else if (os.platform() === 'win32') {
+  file = 'C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Bookmarks'
 }
 
 module.exports = (pluginContext) => {
